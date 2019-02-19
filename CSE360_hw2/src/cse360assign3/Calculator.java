@@ -27,6 +27,7 @@ package cse360assign3;
  * Add, subtract, multiply, divide methods perform their respective operations.
  * getHistory method returns a string that contains all of the previously entered
  * operations that were entered it the calculator program.
+ * 
  *
  */
 
