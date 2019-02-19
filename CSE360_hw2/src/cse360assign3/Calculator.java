@@ -6,8 +6,9 @@
  * 
  * Description: The following file contains an unfinished calculator
  * program. The program contains methods to display total value, add,
- * subtract, multiply, divide, and show history. These methods are blank
- * for now and will be added later.
+ * subtract, multiply, divide, and show history. The add, subtract, multiply, and divide
+ * methods are now functional and perform their respective operations. 
+ * The getHistory method is unfinished and blank.
  */
 
 
@@ -21,8 +22,9 @@ package cse360assign3;
  * add, subtract, multiply, and divide. 
  * There is also a getHistory method that returns previously entered expressions.
  * The constructor initializes the total count to zero.
- * getTotal method returns 0.
- * Add, subtract, multiply, divide, and getHistory methods are blank and unfinished.
+ * getTotal method returns the current value of the total variable.
+ * Add, subtract, multiply, divide methods perform their respective operations.
+ * getHistory method is unfinished and blank
  *
  */
 
@@ -41,10 +43,10 @@ public class Calculator {
 	}
 	
 	/**
-	 * getTotal method returns value of 0.
+	 * getTotal method returns value of total variable.
 	 * 
 	 * 
-	 * @return 0.
+	 * @return total.
 	 */
 	
 	public int getTotal () {
@@ -52,7 +54,7 @@ public class Calculator {
 	}
 	
 	/**
-	 * add method is currently blank
+	 * add method adds parameter value to total value.
 	 * 
 	 * @param value
 	 */
@@ -62,7 +64,7 @@ public class Calculator {
 	}
 	
 	/**
-	 * subtract method is currently blank
+	 * subtract method subtracts parameter value from the total value.
 	 * 
 	 * @param value
 	 */
@@ -72,7 +74,7 @@ public class Calculator {
 	}
 	
 	/**
-	 * multiply method is currently blank
+	 * multiply method multiplies parameter value to the total value.
 	 * 
 	 * @param value
 	 */
@@ -82,17 +84,18 @@ public class Calculator {
 	}
 	
 	/**
-	 * divide method is currently blank
+	 * divide method divides parameter value by the total value.
+	 * If the parameter value is zero, the total value becomes zero.
 	 * 
 	 * @param value
 	 */
 	
 	public void divide (int value) {
-		if(value == 0)
+		if(value == 0)	// total becomes 0 when divisor parameter is 0
 		{
 			total = 0;
 		}
-		else
+		else	// if not, divide total by parameter value
 		{
 			total /= value;
 		}
