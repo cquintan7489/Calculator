@@ -104,7 +104,7 @@ public class Calculator {
 	/**
 	 * getHistory method is currently blank
 	 * 
-	 * @param empty string
+	 * @return empty string
 	 */
 	
 	public String getHistory () {
